@@ -1,4 +1,3 @@
-
 // Should receive a sorted array and for each iteration, calculate its square and return its result
 pub fn sorted_squared_array(array: Vec<i32>) -> Vec<i32> {
     let mut new_arr = Vec::new();

@@ -1,10 +1,10 @@
-use std::ops::{Add, AddAssign, SubAssign, Sub};
+use std::ops::{Add, AddAssign, Sub, SubAssign};
 
 pub fn sum_two_numbers(array: Vec<i32>, target_sum: i32) -> Vec<i32> {
     if array.len() <= 1 {
-        return [].to_vec()
+        return [].to_vec();
     };
-    
+
     let mut array = array;
     array.sort();
     let mut left = 0;
@@ -14,7 +14,7 @@ pub fn sum_two_numbers(array: Vec<i32>, target_sum: i32) -> Vec<i32> {
         let sum = array[left].add(array[right]);
 
         if sum == target_sum {
-            return [array[left], array[right]].to_vec()
+            return [array[left], array[right]].to_vec();
         } else if sum < target_sum {
             left.add_assign(1);
         } else if sum > target_sum {

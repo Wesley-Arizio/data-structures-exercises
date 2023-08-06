@@ -20,7 +20,7 @@ pub fn is_valid_subsequence(arr: Vec<i32>, sequence: Vec<i32>) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
-    
+
     #[test]
     fn validate_subsequence_success() {
         let arr = [5, 1, 22, 25, 6, -1, 8, 10].to_vec();
