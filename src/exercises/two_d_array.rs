@@ -1,4 +1,4 @@
-fn hourglass_sum(arr: &[Vec<i32>]) -> i32 {
+pub fn hourglass_sum(arr: &[Vec<i32>]) -> i32 {
     let mut greatest_sum = i32::MIN;
     for r in 0..4 {
         for c in 0..4 {
